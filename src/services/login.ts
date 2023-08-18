@@ -8,6 +8,11 @@ interface ILoginResponse {
 export const loginService = async (data: IFormData) => {
   const body = { email: data.email, password: data.senha }
 
+  const local =
+    process.env.NODE_ENV === 'development'
+      ? process.env.NEXT_PUBLIC_API_URL
+      : ''
+
   const response: ILoginResponse | Error = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/login`,
     {
