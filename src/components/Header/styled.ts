@@ -18,6 +18,7 @@ export const HeaderStyled = styled.header`
 `
 
 export const ListHeaderOptions = styled.ul`
+  align-items: center;
   display: flex;
   flex-direction: column;
   font-family: 'Fira Sans', sans-serif;

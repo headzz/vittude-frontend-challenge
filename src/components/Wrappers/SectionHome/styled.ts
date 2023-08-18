@@ -12,7 +12,7 @@ export const SectionHome = styled.section`
   }
 
   fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
 
   fieldset:last-of-type {

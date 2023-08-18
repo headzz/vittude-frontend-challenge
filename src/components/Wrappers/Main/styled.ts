@@ -43,7 +43,22 @@ export const LoggedMainStyled = styled.main`
     text-align: center;
   }
   @media screen and (min-width: 800px) {
+    & header {
+      background-color: #ffffff;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    & a {
+      color: #000;
+    }
+
+    & a svg {
+      filter: drop-shadow(0px 0px 2px #221e1e);
+    }
+
     background: ${({ theme }) =>
-      `linear-gradient(to bottom, #756767 80px, ${theme.colors.light[100]} 80px);`};
+      `linear-gradient(to top, ${theme.colors.light[100]}, ${theme.colors.light[200]});`};
   }
 `

@@ -42,6 +42,6 @@ export const AnchorReviewPassword = styled.a`
 export const ErrorMessageStyled = styled.p`
   color: ${({ theme }) => theme.colors.error};
   font-size: ${({ theme }) => theme.font.size.small};
-  margin-top: 2px;
-  text-align: center;
+  margin-top: 4px;
+  text-align: left;
 `
