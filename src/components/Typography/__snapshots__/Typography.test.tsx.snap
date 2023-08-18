@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography renders Inter font and large text 1`] = `
+<p
+  class="sc-bcPKhP dvolhf"
+>
+  Test
+</p>
+`;
+
+exports[`Typography renders bold and extra large text 1`] = `
+<p
+  class="sc-bcPKhP hoITMT"
+>
+  Test
+</p>
+`;
+
+exports[`Typography renders default text 1`] = `
+<p
+  class="sc-bcPKhP disYCL"
+>
+  Test
+</p>
+`;
+
+exports[`Typography renders small text 1`] = `
+<p
+  class="sc-bcPKhP ivqPcO"
+>
+  Test
+</p>
+`;
