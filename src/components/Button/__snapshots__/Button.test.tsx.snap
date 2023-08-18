@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders primary button 1`] = `
+<button
+  class="sc-bcPKhP xeGTD"
+>
+  Test
+</button>
+`;
+
+exports[`Button should render disabled button 1`] = `
+<button
+  class="sc-bcPKhP xeGTD"
+  disabled=""
+>
+  Test
+</button>
+`;
+
+exports[`Button should render outline button 1`] = `
+<button
+  class="sc-bcPKhP bEYXBt"
+  disabled=""
+>
+  Test
+</button>
+`;
