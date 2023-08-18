@@ -16,6 +16,9 @@ const SecondaryButton = css`
   `}
 `
 interface PrimaryType {
+  /**
+   * transient prop for styling primary button
+   */
   $primary: boolean
 }
 export const ButtonStyled = styled.button<PrimaryType>`
