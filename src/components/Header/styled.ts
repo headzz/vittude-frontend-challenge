@@ -18,7 +18,7 @@ export const HeaderStyled = styled.header`
 `
 
 export const ListHeaderOptions = styled.ul`
-  align-items: center;
+  align-items: start;
   display: flex;
   flex-direction: column;
   font-family: 'Fira Sans', sans-serif;
@@ -32,7 +32,9 @@ export const ListHeaderOptions = styled.ul`
   }
 
   @media screen and (min-width: 800px) {
+    align-items: center;
     flex-direction: row;
+
     li {
       color: ${({ theme }) => theme.colors.light[100]};
       margin-bottom: 0;
