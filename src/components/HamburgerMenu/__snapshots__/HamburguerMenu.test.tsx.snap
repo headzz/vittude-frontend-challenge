@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders hamburguer menu 1`] = `
+<button
+  class="sc-bcPKhP heUomK"
+>
+  <span
+    class="sc-grXZZQ irOzWR"
+  />
+  <span
+    class="sc-grXZZQ irOzWR"
+  />
+</button>
+`;
+
+exports[`Button should trigger nav appearing 1`] = `
+<nav
+  class="sc-dkjKgF iKmdmO"
+  open=""
+>
+  <ul>
+    <li>
+      Inicio
+    </li>
+    <li>
+      Blog
+    </li>
+  </ul>
+</nav>
+`;
