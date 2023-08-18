@@ -1,7 +1,7 @@
 import { css, keyframes, styled } from 'styled-components'
-import { ButtonProps } from './interface'
+import { HamburguerMenuProps } from './interface'
 
-export const MenuButton = styled.button<Pick<ButtonProps, 'open'>>`
+export const MenuButton = styled.button<Pick<HamburguerMenuProps, 'open'>>`
   align-items: center;
   background-color: transparent;
   border: none;
@@ -30,7 +30,7 @@ export const MenuButton = styled.button<Pick<ButtonProps, 'open'>>`
     `}
 `
 
-export const MenuLine = styled.span<Pick<ButtonProps, 'open'>>`
+export const MenuLine = styled.span<Pick<HamburguerMenuProps, 'open'>>`
   background-color: #212529;
   border-radius: 2px;
   height: 3px;
@@ -68,7 +68,7 @@ const OpenMixin = css`
   }
 `
 
-export const MobileNavContent = styled.nav<Pick<ButtonProps, 'open'>>`
+export const MobileNavContent = styled.nav<Pick<HamburguerMenuProps, 'open'>>`
   ${({ open }) => open && OpenMixin};
   z-index: 1;
 `
