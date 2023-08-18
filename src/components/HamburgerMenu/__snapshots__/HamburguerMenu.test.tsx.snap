@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders hamburguer menu 1`] = `
+exports[`hamburguer mennus renders default menu 1`] = `
 <button
   class="sc-bcPKhP heUomK"
 >
@@ -13,7 +13,7 @@ exports[`Button renders hamburguer menu 1`] = `
 </button>
 `;
 
-exports[`Button should trigger nav appearing 1`] = `
+exports[`hamburguer mennus should trigger nav appearing 1`] = `
 <nav
   class="sc-dkjKgF iKmdmO"
   open=""

@@ -3,8 +3,8 @@ import { HamburguerMenu } from '.'
 import { ThemeProvider } from 'styled-components'
 import { theme } from '@styles/theme'
 
-describe('Button', () => {
-  it('renders hamburguer menu', () => {
+describe('hamburguer mennus', () => {
+  it('renders default menu', () => {
     render(
       <ThemeProvider theme={theme}>
         <HamburguerMenu>
