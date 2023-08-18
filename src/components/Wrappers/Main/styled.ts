@@ -20,7 +20,7 @@ export const MainStyled = styled.main`
       `linear-gradient(to right, ${theme.colors.light[100]} 50%, ${theme.colors.primary} 50%);`};
     grid-template-areas: 'header header' 'main aside';
     grid-template-rows: 88px 1fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 `
 
