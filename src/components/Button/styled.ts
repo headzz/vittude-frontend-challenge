@@ -24,6 +24,7 @@ interface PrimaryType {
 export const ButtonStyled = styled.button<PrimaryType>`
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
   font-weight: 600;
   outline: 0;
   text-align: center;
