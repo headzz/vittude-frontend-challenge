@@ -8,7 +8,7 @@ import { useLogin } from '@hooks/useLogin'
 
 export const MobileHomePage = () => {
   const { states, events } = useLogin()
-  const { apiError, errorMessages, inputData } = states
+  const { errorMessages, inputData } = states
   const { handleBlur, handleChange, handleForm } = events
   return (
     <>
@@ -17,7 +17,7 @@ export const MobileHomePage = () => {
         <Typography font="Inter" size="large">
           Bem-vindo a Vittude!
         </Typography>
-        <ErrorMessageStyled>{apiError}</ErrorMessageStyled>
+
         <form onSubmit={handleForm}>
           <Input
             errorMessage={errorMessages.email}

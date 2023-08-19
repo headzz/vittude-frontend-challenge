@@ -12,8 +12,6 @@ const formData = {
 export const useLogin = () => {
   const [errorMessages, setErrorMessages] = useState<IFormData>(formData)
 
-  const [apiError, setApiError] = useState<string>('')
-
   const [inputData, setInputData] = useState<IFormData>(formData)
 
   const router = useRouter()
@@ -50,16 +48,24 @@ export const useLogin = () => {
       const login = await loginService(inputData)
 
       if (login instanceof Error) {
-        return setApiError('Usuário e/ou senha inválidos')
+        return setErrorMessages({
+          ...errorMessages,
+          email: 'Usuário não pode ser encontrado',
+          senha: '',
+        })
       }
       router.push(`/logged?name=${login.name}`)
     } catch (error: any) {
-      setApiError('Usuário ou senha inválidos')
+      setErrorMessages({
+        ...errorMessages,
+        email: 'Usuário não pode ser encontrado',
+        senha: '',
+      })
     }
   }
 
   return {
-    states: { inputData, errorMessages, apiError },
+    states: { inputData, errorMessages },
     events: { handleBlur, handleChange, handleForm },
   }
 }

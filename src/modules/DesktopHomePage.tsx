@@ -10,7 +10,7 @@ import { useLogin } from '@hooks/useLogin'
 
 export const DesktopHomePage = () => {
   const { states, events } = useLogin()
-  const { apiError, errorMessages, inputData } = states
+  const { errorMessages, inputData } = states
   const { handleBlur, handleChange, handleForm } = events
   return (
     <>
@@ -19,7 +19,6 @@ export const DesktopHomePage = () => {
         <Typography font="Inter" size="large" bold>
           Bem-vindo a Vittude!
         </Typography>
-        <ErrorMessageStyled>{apiError}</ErrorMessageStyled>
         <form onSubmit={handleForm}>
           <Input
             errorMessage={errorMessages.email}
@@ -53,7 +52,7 @@ export const DesktopHomePage = () => {
         </Button>
       </SectionHome>
       <AsideHomePage>
-        <Image src="/static/business.svg" alt="" fill />
+        <Image src="/static/business.svg" alt="" width={620} height={370} />
       </AsideHomePage>
     </>
   )
